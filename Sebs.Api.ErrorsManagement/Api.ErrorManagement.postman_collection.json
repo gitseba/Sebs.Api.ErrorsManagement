@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "853c3c14-4470-4bc7-91ae-3ad292815cc9",
+		"name": "Api.ErrorManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8800622"
+	},
+	"item": [
+		{
+			"name": "NotFound",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/errorgenerator/notfound",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"errorgenerator",
+						"notfound"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Ref Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/errorgenerator/servererror",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"errorgenerator",
+						"servererror"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400 Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/errorgenerator/badrequest",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"errorgenerator",
+						"badrequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "400 Validation Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/errorgenerator/badrequest/five",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"errorgenerator",
+						"badrequest",
+						"five"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Not found endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/endpointthatdoesnotexist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"endpointthatdoesnotexist"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
